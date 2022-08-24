@@ -1,7 +1,26 @@
+
 .App {
   text-align: center;
+  background-color: #333d529a;
 }
-
+.navBar ul{
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  margin-right: 40px;
+}
+.navBar ul li a{
+  text-decoration: none;
+  font-size: 20px;
+  color: whitesmoke;
+}
+.logoCircu{
+  width: 150px;
+  height: 150px;
+  margin-top: 15px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
