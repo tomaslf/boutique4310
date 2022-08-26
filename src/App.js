@@ -1,13 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
-import NavBar from './components/NavBar';
+import NavBar from './components/NavBar/NavBar';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <header className="App-header">       
-        <img src={logo} className="App-logo" alt="logo" />
+      
+      <header className="App-header">   
+      <ItemListContainer  greeting="Proximamente conocerás nuestra tienda" />    
+        <img src="./logoCircu.png" className="App-logo" alt="logo" />
+        
         <p>
           Proximamente
         </p>
