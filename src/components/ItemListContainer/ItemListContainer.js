@@ -2,7 +2,11 @@ import './ItemListContainer.css'
 
 const ItemListContainer = ({greeting} ) => {
   return (
-    <h1 className="titulo">{greeting}</h1>
+    <div>
+      <h1 className="titulo">{greeting}</h1>
+      
+    </div>
+    
   )
 }
 
