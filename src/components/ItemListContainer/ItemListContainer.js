@@ -1,6 +1,6 @@
 import './ItemListContainer.css';
 import Productos from './Productos/Productos';
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import ItemList from './ItemList/ItemList';
 
 const ItemListContainer = ({greeting} ) => {
@@ -30,33 +30,26 @@ const ItemListContainer = ({greeting} ) => {
         }        
     };
 
-
     const [ListaProductos, setListaProductos] = useState([]);
-    useEffect(() => {
-      obtenerProductos.then((response) => {
-        setListaProductos(response);
-      });
-    }, []);
+  
 
-   const obtenerProductos = new Promise ((resolve) =>{
+    new Promise ((resolve) =>{
     setTimeout(() => {
       resolve(Productos)
-    }, 2000);
-
-   });
+    }, 2000)
+   }).then((response) => {
+      setListaProductos(response);
+   })
 
 
     return (
       <div>
           
           <h1 className="titulo">{greeting}</h1>
-          <ItemList lista= {ListaProductos}/>
+          <ItemList lista= {ListaProductos}/> 
           <div className='cards'>
-            <div className="card">
-              
-            
-                
-                               
+            <div className="card"> 
+                                        
                 <div className="contador">
                     <button onClick={RestaUno}>-</button>
                     <p>{initialState} </p>
