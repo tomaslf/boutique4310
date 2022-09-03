@@ -1,5 +1,7 @@
-
-
+/* .navBar{
+  position: sticky;top: 0;
+  background-color: #333d52;
+} */
 .navBar ul{
     margin-top: 0px;
     display: flex;
@@ -17,4 +19,4 @@
     width: 150px;
     height: 150px;
     margin-top: 15px;
-  }
+  } 

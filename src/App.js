@@ -10,7 +10,7 @@ function App() {
       <NavBar />
       
       <header className="App-header">   
-      <ItemListContainer  greeting="Proximamente conocerás nuestra tienda" />    
+      <ItemListContainer  greeting="Nosotros" />    
         <img src="./logoCircu.png" className="App-logo" alt="logo" />
         
         <p>

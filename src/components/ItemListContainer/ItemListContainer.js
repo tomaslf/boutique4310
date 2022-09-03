@@ -1,10 +1,10 @@
-import './ItemListContainer.css'
-import { useState } from 'react';
-
+import './ItemListContainer.css';
+import Productos from './Productos/Productos';
+import { useState, useEffect } from 'react';
+import ItemList from './ItemList/ItemList';
 
 const ItemListContainer = ({greeting} ) => {
     const [initialState, setInitialState] = useState(0);
-
     const SumaUno = () => {
         if(initialState <= 4) {
             setInitialState (initialState + 1);
@@ -28,17 +28,39 @@ const ItemListContainer = ({greeting} ) => {
             stock = ``;
              document.getElementById("stock").innerHTML = stock;
         }        
-    }
+    };
+
+
+    const [ListaProductos, setListaProductos] = useState([]);
+    useEffect(() => {
+      obtenerProductos.then((response) => {
+        setListaProductos(response);
+      });
+    }, []);
+
+   const obtenerProductos = new Promise ((resolve) =>{
+    setTimeout(() => {
+      resolve(Productos)
+    }, 2000);
+
+   });
+
+
     return (
       <div>
-        <h1 className="titulo">{greeting}</h1>
+          
+          <h1 className="titulo">{greeting}</h1>
+          <ItemList lista= {ListaProductos}/>
           <div className='cards'>
             <div className="card">
-                <h4>Nombre del Producto</h4>               
+              
+            
+                
+                               
                 <div className="contador">
                     <button onClick={RestaUno}>-</button>
                     <p>{initialState} </p>
-                    <button onClick={SumaUno}>+</button>        
+                    <button onClick={SumaUno}>+</button>      
                 </div>
                 <p id='stock'></p>
             </div>
