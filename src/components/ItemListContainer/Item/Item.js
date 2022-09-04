@@ -1,6 +1,7 @@
 import './Item.css'
 import Boton from '../Boton/Boton'
 
+
 const Item = ({nombre,precio,imagen}) => {
   return (
     <div>  
