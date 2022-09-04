@@ -1,37 +1,12 @@
 .titulo{
-   margin: 20px;
-    border: solid 0.5px;
-    padding: 1px;
-    border-radius: 20px 100px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 50px;
 }
 p{
     text-align: justify;
     margin: 20px;
 }   
-.cards{
-    display: flex;
-    justify-content: space-around;
-}
-.card{
-    border: solid 2px black;
-    height: 300px;
-    width: 200px;
-    margin: 50px;
-    background-color: rgba(73, 184, 73, 0.699);    
-}
-.contador{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-button{
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    background-color: rgba(46, 46, 207, 0.589);
-    border-color: rgba(46, 46, 207, 0.589) ;
-}
-#stock{
-    font-size: 15px;
-}
+
+
 
