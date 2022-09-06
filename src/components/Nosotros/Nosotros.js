@@ -14,7 +14,7 @@ const Nosotros = () => {
             </p>
         </div>
         <div>
-            <img src='../modacircular.png' alt='MOda Circular' />
+            <img src='../images/modacircular.png' alt='MOda Circular' />
         </div>
 
     </div>

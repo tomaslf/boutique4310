@@ -1,8 +1,8 @@
-import './Boton.css'
+import './ItemCount.css'
 
 import { useState } from "react";
 
-const Boton = () => {
+const ItemCount = () => {
     const [initialState, setInitialState] = useState(0);
     const SumaUno = () => {
         if(initialState <= 4) {
@@ -41,7 +41,7 @@ const Boton = () => {
     )
   }
   
-  export default Boton
+  export default ItemCount;
 
 
 

@@ -1,7 +1,7 @@
 import './CartWidget.css'
 export const CartWidget = () => {
   return (
-    <a href='./index.html'><img src="../cart.svg" alt="carrito" className="carrito"></img></a>
+    <a href='./index.html'><img src="../images/cart.svg" alt="carrito" className="carrito"></img></a>
   )
 }
 

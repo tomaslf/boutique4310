@@ -1,5 +1,5 @@
 import './Item.css'
-import Boton from '../Boton/Boton'
+import ItemCount from '../ItemCount/ItemCount'
 
 
 const Item = ({name,price,img}) => {
@@ -9,7 +9,7 @@ const Item = ({name,price,img}) => {
             <img src={img} alt="imagen" />
             <h2>{name}</h2>
             <h5>{price} </h5>
-            <Boton/>
+            <ItemCount/>
         </div>
     </div>
   )
