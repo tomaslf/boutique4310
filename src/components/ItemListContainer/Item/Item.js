@@ -2,13 +2,13 @@ import './Item.css'
 import Boton from '../Boton/Boton'
 
 
-const Item = ({nombre,precio,imagen}) => {
+const Item = ({name,price,img}) => {
   return (
     <div>  
         <div className='card' >
-            <img src={imagen} alt="imagen" />
-            <h2>{nombre}</h2>
-            <h5>{precio} </h5>
+            <img src={img} alt="imagen" />
+            <h2>{name}</h2>
+            <h5>{price} </h5>
             <Boton/>
         </div>
     </div>

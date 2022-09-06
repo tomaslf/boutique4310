@@ -1,20 +1,20 @@
 import './ItemListContainer.css';
-import Productos from './Productos/Productos';
+import Products from './Products/Products';
 import ItemList from './ItemList/ItemList';
 import { useState } from 'react';
 
 const ItemListContainer = ({greeting} ) => {
     
 
-    const [ListaProductos, setListaProductos] = useState([]);
+    const [ProductList, setProductList] = useState([]);
   
 
     new Promise ((resolve) =>{
     setTimeout(() => {
-      resolve(Productos)
+      resolve(Products)
     }, 2000)
    }).then((response) => {
-      setListaProductos(response);
+      setProductList(response);
    })
 
 
@@ -22,7 +22,7 @@ const ItemListContainer = ({greeting} ) => {
       <div>
           
           <h1 className="titulo" >{greeting}</h1>
-          <ItemList lista= {ListaProductos}/>       
+          <ItemList list= {ProductList}/>       
     </div>
       
     )
