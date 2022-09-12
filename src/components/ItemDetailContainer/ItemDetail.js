@@ -2,7 +2,7 @@ import Products from '../ItemListContainer/Products/Products';
 import ItemList from '../ItemListContainer/ItemList/ItemList';
 import { useState } from 'react';
 
-const ItemDetailContainer = () => {
+const ItemDetail = () => {
     
 
     const [ProductList, setProductList] = useState([]);
@@ -26,4 +26,4 @@ const ItemDetailContainer = () => {
     )
   }
 
-export default ItemDetailContainer;
+export default ItemDetail;
