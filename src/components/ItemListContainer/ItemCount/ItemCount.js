@@ -1,5 +1,5 @@
 import './ItemCount.css'
-
+import Button from 'react-bootstrap/Button';
 import { useState } from "react";
 
 const ItemCount = () => {
@@ -31,9 +31,9 @@ const ItemCount = () => {
     return (
       <div>
           <div className="contador">
-              <button onClick={RestaUno}>-</button>
-              <p>{initialState} </p>
-              <button onClick={SumaUno}>+</button>   
+              <Button variant='secondary' onClick={RestaUno}>-</Button>
+              <p><strong>{initialState}</strong> </p>
+              <Button variant='secondary'  onClick={SumaUno}>+</Button>   
               
           </div>
               

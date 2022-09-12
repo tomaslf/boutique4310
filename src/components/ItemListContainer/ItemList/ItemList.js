@@ -4,7 +4,7 @@ import './ItemList.css';
 const ItemList = ({list}) => {
   return (
     <div className="tarjeta">
-        {list.map((product) => (<Item key={product.id} nombre={product.nombre} precio= {product.precio} img= {product.img}/>))}   
+        {list.map((product) => (<Item key={product.id} name={product.name} price= {product.price} img= {product.img}/>))}   
     </div>
   );
 };
