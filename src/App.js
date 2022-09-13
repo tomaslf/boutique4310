@@ -3,7 +3,7 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import Nosotros from './components/Nosotros/Nosotros';
-import ItemDetail from './components/ItemDetailContainer/ItemDetail';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       </header>
           <Nosotros/>      
           <ItemListContainer  greeting="Productos" />
-          <ItemDetail/>
+          <ItemDetailContainer/>
 
       
            
