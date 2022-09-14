@@ -8,7 +8,7 @@ import { useState, useEffect } from 'react';
 const ItemDetailContainer = () => {
     
 
-    const [ProductItem, setProductItem] = useState([]);
+    const [productItem, setProductItem] = useState([]);
     useEffect(() =>{
         getItem.then((response)=>{
           const filtrarItem = response.filter ((prod) => prod.id === '2');
@@ -25,7 +25,7 @@ const ItemDetailContainer = () => {
 
     return (
       <div className='itemCard'>
-          <ItemDetail item= {ProductItem}/>       
+          <ItemDetail item= {productItem}/>       
     </div>
       
     )

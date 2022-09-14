@@ -8,6 +8,7 @@
 }
 .card img{
     border-radius: 15px;
-    width: 250px;
-    height: 350px;
+    max-width: 250px;
+    max-height: 350px;
+    padding: 20px;
 }
