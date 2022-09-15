@@ -27,7 +27,7 @@ const Products = [
         id: '4',
         name: 'Remera Zara',
         price: '$1000',
-        img: '../images/remera.jpg',
+        img: '../images/maradona-argentina.png',
         category: 'Remeras'
 
     },
@@ -35,15 +35,15 @@ const Products = [
         id: '5',
         name: 'Jean Levis',
         price: '$3500',
-        img: '../images/jean.jpg',
-        category: 'Jeans'
+        img: '../images/messi-argentina.png',
+        category: 'Remeras'
 
     },
     {
         id: '6',
         name: 'Buzo',
         price: '$2000',
-        img: '../images/buzo.jpg',
+        img: '../images/owen-england.png',
         category: 'Buzos'
 
     }

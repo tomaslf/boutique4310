@@ -10,6 +10,8 @@ const ItemListContainer = ({greeting} ) => {
     const {category} = useParams();
 
     const [ProductList, setProductList] = useState([]);
+    
+
 
     useEffect(() =>{
       if(category){
@@ -19,8 +21,9 @@ const ItemListContainer = ({greeting} ) => {
         getProducts.then((response) => {
             setProductList(response);
         })
+        
     }        
-},[category])
+},[category]);
 
   const getProducts =  new Promise ((resolve,reject) =>{
     setTimeout(() => {
@@ -34,7 +37,7 @@ const ItemListContainer = ({greeting} ) => {
       <div>
           
           <h1 className="titulo" >{greeting}</h1>
-          <ItemList list= {ProductList}/>       
+         <ItemList list= {ProductList}/>    
     </div>
       
     )
