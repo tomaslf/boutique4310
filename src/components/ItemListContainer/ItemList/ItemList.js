@@ -8,9 +8,9 @@ const ItemList = ({list}) => {
     
     <div className="tarjeta">
         {list.map((product) => (
-        <Link key={product.id} to={'/products/' + product.id }
+        <Link key={product.id} to={'/detail/' + product.id }
         style={{textDecoration : 'none', color: 'black' }} > 
-        <Item  name={product.name} price= {product.price} img= {product.img}/>
+        <Item  name={product.name} price= {product.price} img= {product.img} category = {product.category} />
         </Link>))}   
     </div>
     

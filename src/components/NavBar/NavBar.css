@@ -14,6 +14,31 @@
     font-size: 20px;
     color: whitesmoke;
   }
+.category{
+  font-size: 25px;
+  color: whitesmoke;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.navBar2{
+  background-color: #333d52a9;
+  padding: 20px;
+  
+ 
+}
+.navBar2 ul{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0px;
+  list-style: none;
+  align-items: center;
+  margin-right: 40px;
+}
+.navBar2 ul li a{
+  text-decoration: none;
+  font-size: 20px;
+  color: whitesmoke;
+}
   .logoCircu{
     width: 150px;
     height: 150px;
