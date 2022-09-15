@@ -51,6 +51,14 @@
     height: 150px;
     margin-top: 15px;
   }
+  .rojo{
+    background-color: black;
+    color: pink;
+  }
+  .verde{
+    background-color: blue;
+    color: aqua;
+  }
   
   @media (prefers-reduced-motion: no-preference) {
     .App-logo {
