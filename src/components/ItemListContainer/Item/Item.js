@@ -2,6 +2,7 @@ import './Item.css'
 
 
 
+
 const Item = ({name,price,img}) => {
   return (
     <div>  

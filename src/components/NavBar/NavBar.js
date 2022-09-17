@@ -36,17 +36,17 @@ const NavBar = () => {
                 <ul>
                     <li>
                         <NavLink to={'/category/Buzos'}>
-                                Buzos
+                                <img src="../images/afa.jpg" alt='Logo Afa'/>
                         </NavLink>
                     </li>
                     <li>
                         <NavLink to={'/category/Remeras'}>
-                                Remeras
+                        <img src="../images/afa.jpg" alt='Logo Afa'/>
                         </NavLink>
                     </li>
                     <li>
                         <NavLink to={'/category/Jeans'}>
-                                Jeans
+                        <img src="../images/afa.jpg" alt='Logo Afa'/>
                         </NavLink>    
                     </li>
                 
