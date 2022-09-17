@@ -2,14 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
   
   
 }
 html{ 
-  background-color: #fff;
+  background-image: linear-gradient(to right, rgba(51, 46, 46, 0.747),black);
 }
 .App{
-  background-color: #ffff;
+  background-image: linear-gradient(to right, rgba(51, 46, 46, 0.747),black);
   
   
 }

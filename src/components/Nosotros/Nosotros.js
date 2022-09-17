@@ -8,13 +8,13 @@ const Nosotros = () => {
                 Nosotros
             </h1>
             <p>
-            Somos CirculAndo un emprendimiento que busca implantar en el mercado la "Moda Circular" el cual es un sistema de producción basado en la economía circular, que busca optimizar los procesos creativos y productivos, promoviendo el uso consciente y racional de recursos tanto naturales como humanos, para reducir el impacto y desperdicio realizado sobre el medio ambiente.
-            Nuestra premisa es mantener los productos en circulación la mayor cantidad de tiempo posible mediante la puesta en marcha del concepto de las tres erres «Reducir, Reusar, Reciclar».
+            Boutique 4310 ® la tienda líder en el mercado del fútbol retro vintage. Especialista en Camisetas Retro Fútbol. Tenemos la mejor selección de camisetas de fútbol vintage oficiales de selecciones nacionales mundialistas de todo el mundo. Compra solo a través de nuestra tienda oficial online, la única tienda autorizada. 
+            Camisetas de fútbol mundialistas oficiales que lucieron los grandes jugadores que han hecho historia en este deporte.
 
             </p>
         </div>
         <div>
-            <img src='../images/modacircular.png' alt='MOda Circular' />
+            <img src='../images/pelotaretro.png' alt='Pelota Futbol Retro' />
         </div>
 
     </div>

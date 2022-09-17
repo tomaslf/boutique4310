@@ -12,8 +12,9 @@
   }
   .navBar ul li a{
     text-decoration: none;
-    font-size: 20px;
-    color: whitesmoke;
+    font-size: 25px;
+    color: rgb(41, 38, 38);
+    font-weight: 500;
   }
 .category{
   font-size: 25px;
@@ -22,9 +23,9 @@
   margin-bottom: 10px;
 }
 .navBar2{
-  background-color: #202124;
+  background-color: #4c4f55;
   padding: 20px;
-  
+  border: solid 1px rgb(224, 163, 72);
  
 }
 .navBar2 ul{
