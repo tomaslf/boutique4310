@@ -1,5 +1,6 @@
 .navBar{
-  background-color: #333d52;
+  background-color: #a6acb8;
+  border: solid 1px rgb(224, 163, 72);
 }
 .navBar ul{
     margin-top: 0px;
@@ -21,7 +22,7 @@
   margin-bottom: 10px;
 }
 .navBar2{
-  background-color: #333d52a9;
+  background-color: #202124;
   padding: 20px;
   
  
@@ -47,9 +48,10 @@
   .App-logo {
     height: 40vmin;
     pointer-events: none;
-    width: 150px;
-    height: 150px;
+    width: 270px;
+    height: 140px;
     margin-top: 15px;
+    margin-bottom: 10px;
   }
   .rojo{
     background-color: black;
@@ -60,7 +62,7 @@
     color: aqua;
   }
   
-  @media (prefers-reduced-motion: no-preference) {
+  /* @media (prefers-reduced-motion: no-preference) {
     .App-logo {
       animation: App-logo-spin infinite 20s linear;
     }
@@ -72,4 +74,4 @@
     to {
       transform: rotate(360deg);
     }
-  }
+  } */
