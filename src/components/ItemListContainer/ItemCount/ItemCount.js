@@ -1,9 +1,9 @@
 import './ItemCount.css'
 import Button from 'react-bootstrap/Button';
-import { useState } from "react";
 
-const ItemCount = () => {
-    const [initialState, setInitialState] = useState(0);
+
+const ItemCount = ({initialState, setInitialState}) => {
+    
     const SumaUno = () => {
         if(initialState <= 4) {
             setInitialState (initialState + 1);        
@@ -23,7 +23,7 @@ const ItemCount = () => {
       <div>
           <div className="contador">
               <Button variant='secondary' onClick={RestaUno}>-</Button>
-              <p><strong>{initialState}</strong> </p>
+                <p><strong>{initialState}</strong> </p>
               <Button variant='secondary'  onClick={SumaUno}>+</Button>   
               
           </div>
