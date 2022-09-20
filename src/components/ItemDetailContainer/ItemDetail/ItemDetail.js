@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 
 const ItemDetail = ({item}) => {
 
-
+  
   const [initialState, setInitialState] = useState(0);
   return (   
     <div>  
