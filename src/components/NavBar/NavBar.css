@@ -17,13 +17,13 @@
     font-weight: 500;
   }
 .category{
-  font-size: 25px;
-  color: whitesmoke;
+  font-size: 35px;
+  color: rgb(8, 8, 8);
   text-align: center;
   margin-bottom: 10px;
 }
 .navBar2{
-  background-color: #4c4f55;
+  background-color: #ffffff;
   padding: 20px;
   border: solid 1px rgb(224, 163, 72);
  
