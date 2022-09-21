@@ -20,7 +20,8 @@
   font-size: 35px;
   color: rgb(8, 8, 8);
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  
 }
 .navBar2{
   background-color: #ffffff;
@@ -61,6 +62,14 @@
   .verde{
     background-color: blue;
     color: aqua;
+  }
+  .navBar2 ul li img{
+    
+    transition: 0.4s;
+  }
+  .navBar2 ul li img:hover{
+    transform: scale(1.1,1.1);
+
   }
   
   /* @media (prefers-reduced-motion: no-preference) {

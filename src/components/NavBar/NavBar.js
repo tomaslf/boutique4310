@@ -32,21 +32,36 @@ const NavBar = () => {
                 </ul>
             </div> 
             <div className='navBar2'>
-                <div className='category'>Categorías de Productos</div>
+                <div className='category'>Nuestras Camisetas</div>
                 <ul>
                     <li>
                         <NavLink to={'/category/Buzos'}>
-                                <img src="../images/afa.jpg" alt='Logo Afa'/>
+                                <img src="../images/escudoargentina.jpg" alt='Logo Afa'/>
                         </NavLink>
                     </li>
                     <li>
                         <NavLink to={'/category/Remeras'}>
-                        <img src="../images/afa.jpg" alt='Logo Afa'/>
+                        <img src="../images/escudoalemania.jpg" alt='Logo Afa'/>
                         </NavLink>
                     </li>
                     <li>
                         <NavLink to={'/category/Jeans'}>
-                        <img src="../images/afa.jpg" alt='Logo Afa'/>
+                        <img src="../images/escudofrancia.jpg" alt='Logo Afa'/>
+                        </NavLink>    
+                    </li>
+                    <li>
+                        <NavLink to={'/category/Jeans'}>
+                        <img src="../images/escudobrasil.jpg" alt='Logo Afa'/>
+                        </NavLink>    
+                    </li>
+                    <li>
+                        <NavLink to={'/category/Jeans'}>
+                        <img src="../images/escudoinglaterra (1).jpg" alt='Logo Afa'/>
+                        </NavLink>    
+                    </li>
+                    <li>
+                        <NavLink to={'/category/Jeans'}>
+                        <img src="../images/escudosuecia.jpg" alt='Logo Afa'/>
                         </NavLink>    
                     </li>
                 
