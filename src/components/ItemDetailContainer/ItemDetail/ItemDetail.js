@@ -1,14 +1,22 @@
 import './ItemDetail.css'
 import ItemCount from '../../ItemListContainer/ItemCount/ItemCount';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
+import { CartContext } from '../../../context/CartContext';
 
 
 const ItemDetail = ({item}) => {
 
+  const {addToCart} = useContext(CartContext);
+  const [initialState, setInitialState] = useState(1);
   
-  const [initialState, setInitialState] = useState(0);
+
+  const onAdd = (item) =>{
+    addToCart(item, initialState)
+    
+ }
+
   return (   
     <div>  
         <div className='card' >
@@ -17,8 +25,8 @@ const ItemDetail = ({item}) => {
             <h2>{item.name}</h2>
             <h5>{item.price} </h5>
             <ItemCount  setInitialState = {setInitialState} initialState = {initialState} />
-            <Link to={'/cart'}><Button variant='secondary' >Agregar al Carrito</Button></Link>
-
+            <Button variant='secondary' onClick={()=> onAdd(item)} >Agregar al Carrito</Button>
+            <Link to={'/cart/'}  ><Button variant='success' >Finalizar Compra</Button></Link>
         </div>
     </div>
   )
