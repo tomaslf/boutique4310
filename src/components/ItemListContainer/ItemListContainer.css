@@ -7,3 +7,7 @@ p{
     text-align: justify;
     margin: 20px;
 }   
+.loader{
+  text-align: center;
+  font-size: 50px;
+}

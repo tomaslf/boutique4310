@@ -26,7 +26,7 @@ const ItemDetail = ({item}) => {
             <h5>{item.price} </h5>
             <ItemCount  setInitialState = {setInitialState} initialState = {initialState} />
             <Button variant='secondary' onClick={()=> onAdd(item)} >Agregar al Carrito</Button>
-            <Link to={'/cart/'}  ><Button variant='success' >Finalizar Compra</Button></Link>
+            <Link to={'/cart/'} ><Button variant='success' >Finalizar Compra</Button></Link>
         </div>
     </div>
   )
