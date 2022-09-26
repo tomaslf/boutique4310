@@ -2,14 +2,9 @@
     box-shadow: 10px 20px 10px rgba(53, 50, 50, 0.37);
     border-radius: 15px;
     margin-bottom: 45px;
-<<<<<<< HEAD
     background-color: rgba(39, 209, 104, 0.349); 
     width: 1000px; 
     height: 500px;
-=======
-    max-width: 250px; 
-    max-height: 550px;
->>>>>>> changeStyle
     text-align: center;
     margin-top: 35px;
     display: flex;
@@ -30,14 +25,9 @@
 }
 .card-detail img{
     border-radius: 15px;
-<<<<<<< HEAD
     width: 350px;
     height: 450px;
  
-=======
-    max-width: 350px;
-    max-height: 350px;
->>>>>>> changeStyle
     padding: 20px;
 }
 .card-detail Button{
