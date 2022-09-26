@@ -22,9 +22,9 @@ const ItemCount = ({initialState, setInitialState}) => {
     return (
       <div>
           <div className="contador">
-              <Button variant='secondary' onClick={RestaUno}>-</Button>
+              <Button className='mt-5' variant='secondary' onClick={RestaUno}>-</Button>
                 <p><strong>{initialState}</strong> </p>
-              <Button variant='secondary'  onClick={SumaUno}>+</Button>   
+              <Button className='mt-5' variant='secondary'  onClick={SumaUno}>+</Button>   
               
           </div>
               

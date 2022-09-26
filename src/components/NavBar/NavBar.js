@@ -37,32 +37,32 @@ const NavBar = () => {
                 <div className='category'>Nuestras Camisetas</div>
                 <ul>
                     <li>
-                        <NavLink to={'/category/Buzos'}>
+                        <NavLink to={'/category/Argentina'}>
                                 <img src="../images/escudoargentina.jpg" alt='Logo Afa'/>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to={'/category/Remeras'}>
+                        <NavLink to={'/category/Alemania'}>
                         <img src="../images/escudoalemania.jpg" alt='Logo Afa'/>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to={'/category/Jeans'}>
+                        <NavLink to={'/category/Francia'}>
                         <img src="../images/escudofrancia.jpg" alt='Logo Afa'/>
                         </NavLink>    
                     </li>
                     <li>
-                        <NavLink to={'/category/Jeans'}>
+                        <NavLink to={'/category/Brasil'}>
                         <img src="../images/escudobrasil.jpg" alt='Logo Afa'/>
                         </NavLink>    
                     </li>
                     <li>
-                        <NavLink to={'/category/Jeans'}>
+                        <NavLink to={'/category/Inglaterra'}>
                         <img src="../images/escudoinglaterra (1).jpg" alt='Logo Afa'/>
                         </NavLink>    
                     </li>
                     <li>
-                        <NavLink to={'/category/Jeans'}>
+                        <NavLink to={'/category/Suecia'}>
                         <img src="../images/escudosuecia.jpg" alt='Logo Afa'/>
                         </NavLink>    
                     </li>

@@ -3,6 +3,7 @@
     height: 150px;
 }
 .cart-view{
+    background-color: whitesmoke;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -10,10 +11,18 @@
     margin: 10px;
     margin-top: 25px;
     padding: 5px;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 10px whitesmoke;
+}
+.botones{
+    display: flex;
+    flex-direction: column;
+    
 }
 .cart-title{
     text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: whitesmoke;
 }
 .vaciar{
     display: flex;

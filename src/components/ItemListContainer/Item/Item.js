@@ -10,7 +10,7 @@ const Item = ({id,name,price,img}) => {
         <div className='card' >
         
             <img src={img} alt="imagen" />
-            <h2>{name}</h2>
+            <h3>{name}</h3>
             <h5> $ {price} </h5>
         
             

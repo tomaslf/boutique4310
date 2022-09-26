@@ -46,11 +46,12 @@ const ItemDetail = ({item}) => {
               </Carousel>
           </div>
             <div className='detail'>
-                  <h2>Detalle del Producto</h2>
+                 
                   <h2>{item.name}</h2>
-                  <h5>${item.price} </h5>
+                  <h4>{item.description} </h4>
+                  <h5>$ {item.price} </h5>
                   <ItemCount  setInitialState = {setInitialState} initialState = {initialState} />
-                  <Button variant='secondary' onClick={()=> onAdd(item)} >Agregar al Carrito</Button>
+                  <Button className='mt-3'  variant='secondary' onClick={()=> onAdd(item)} >Agregar al Carrito</Button>
                   {cart.length === 0 ? ('') : (
                 <>
                 <Link to={'/cart/'} ><Button variant='success' >Ir a pagar</Button></Link>
