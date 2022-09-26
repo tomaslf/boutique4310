@@ -11,7 +11,7 @@ const Item = ({id,name,price,img}) => {
         
             <img src={img} alt="imagen" />
             <h2>{name}</h2>
-            <h5>{price} </h5>
+            <h5> $ {price} </h5>
         
             
         </div>
