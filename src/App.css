@@ -7,10 +7,10 @@
   
 }
 html{ 
-  background-image: linear-gradient(to right, rgba(51, 46, 46, 0.747),black);
+  background-color: black;
 }
 .App{
-  background-image: linear-gradient(to right, rgba(51, 46, 46, 0.747),black);
+  background-color: black;
   
   
 }

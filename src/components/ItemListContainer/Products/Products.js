@@ -17,9 +17,11 @@ const Products = [
     },
     {
         id: '3',
-        name: 'Buzo',
+        name: 'Camiseta Zlatan Ibrahimovic Suecia Mundial 2006',
         price: '2000',
         img: '../images/ibra-suecia.png',
+        img2: '../images/ibra-suecia2.png',
+        img3: '../images/ibra.jpg',
         category: 'Buzos'
 
     },
@@ -28,6 +30,8 @@ const Products = [
         name: 'Remera Zara',
         price: '1000',
         img: '../images/maradona-argentina.png',
+        img2: '../images/maradona-argentina2.png',
+        img3: '../images/diego.jpg',
         category: 'Remeras'
 
     },
@@ -60,6 +64,8 @@ const Products = [
         name: 'Buzo',
         price: '2000',
         img: '../images/mattaus-german.png',
+        img2: '../images/mattaus-german2.png',
+        img3: '../images/lottar.jpg',
         category: 'Buzos'
 
     },

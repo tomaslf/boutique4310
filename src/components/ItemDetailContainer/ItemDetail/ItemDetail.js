@@ -32,14 +32,14 @@ const ItemDetail = ({item}) => {
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src={item.img}
+                    src={item.img2}
                     alt="Second slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img
+                  <img id='img3'
                     className="d-block w-100"
-                    src={item.img}
+                    src={item.img3}
                     alt="Third slide"
                   />
                 </Carousel.Item>
@@ -48,7 +48,7 @@ const ItemDetail = ({item}) => {
             <div className='detail'>
                   <h2>Detalle del Producto</h2>
                   <h2>{item.name}</h2>
-                  <h5>{item.price} </h5>
+                  <h5>${item.price} </h5>
                   <ItemCount  setInitialState = {setInitialState} initialState = {initialState} />
                   <Button variant='secondary' onClick={()=> onAdd(item)} >Agregar al Carrito</Button>
                   {cart.length === 0 ? ('') : (
