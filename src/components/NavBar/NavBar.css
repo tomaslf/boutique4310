@@ -1,5 +1,6 @@
 .navBar{
-  background-color: #333d52;
+  background-color: #a6acb8;
+  border: solid 1px rgb(224, 163, 72);
 }
 .navBar ul{
     margin-top: 0px;
@@ -11,19 +12,21 @@
   }
   .navBar ul li a{
     text-decoration: none;
-    font-size: 20px;
-    color: whitesmoke;
+    font-size: 25px;
+    color: rgb(41, 38, 38);
+    font-weight: 500;
   }
 .category{
-  font-size: 25px;
-  color: whitesmoke;
+  font-size: 35px;
+  color: rgb(8, 8, 8);
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  
 }
 .navBar2{
-  background-color: #333d52a9;
+  background-color: #ffffff;
   padding: 20px;
-  
+  border: solid 1px rgb(224, 163, 72);
  
 }
 .navBar2 ul{
@@ -47,9 +50,10 @@
   .App-logo {
     height: 40vmin;
     pointer-events: none;
-    width: 150px;
-    height: 150px;
+    width: 270px;
+    height: 140px;
     margin-top: 15px;
+    margin-bottom: 10px;
   }
   .rojo{
     background-color: black;
@@ -59,8 +63,16 @@
     background-color: blue;
     color: aqua;
   }
+  .navBar2 ul li img{
+    
+    transition: 0.4s;
+  }
+  .navBar2 ul li img:hover{
+    transform: scale(1.1,1.1);
+
+  }
   
-  @media (prefers-reduced-motion: no-preference) {
+  /* @media (prefers-reduced-motion: no-preference) {
     .App-logo {
       animation: App-logo-spin infinite 20s linear;
     }
@@ -72,4 +84,4 @@
     to {
       transform: rotate(360deg);
     }
-  }
+  } */

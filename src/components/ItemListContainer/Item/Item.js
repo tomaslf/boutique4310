@@ -2,7 +2,13 @@ import './Item.css'
 import { Link } from 'react-router-dom';
 
 
+<<<<<<< HEAD
 const Item = ({id,name,price,img}) => {
+=======
+
+
+const Item = ({name,price,img}) => {
+>>>>>>> changeStyle
   return (
     <div>  
        <Link  to={'/detail/' + id }

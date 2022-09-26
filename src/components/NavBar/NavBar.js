@@ -10,7 +10,7 @@ const NavBar = () => {
                 <ul>
                     <li>
                         <NavLink to={'/'}>
-                                <img src="../images/logocircu.png" className="App-logo" alt="logo" />
+                                <img src="../images/brandlogo.png" className="App-logo" alt="logo" />
                         </NavLink>
                     </li>
                     <li>
@@ -34,21 +34,36 @@ const NavBar = () => {
                 </ul>
             </div> 
             <div className='navBar2'>
-                <div className='category'>Categorías de Productos</div>
+                <div className='category'>Nuestras Camisetas</div>
                 <ul>
                     <li>
                         <NavLink to={'/category/Buzos'}>
-                                Buzos
+                                <img src="../images/escudoargentina.jpg" alt='Logo Afa'/>
                         </NavLink>
                     </li>
                     <li>
                         <NavLink to={'/category/Remeras'}>
-                                Remeras
+                        <img src="../images/escudoalemania.jpg" alt='Logo Afa'/>
                         </NavLink>
                     </li>
                     <li>
                         <NavLink to={'/category/Jeans'}>
-                                Jeans
+                        <img src="../images/escudofrancia.jpg" alt='Logo Afa'/>
+                        </NavLink>    
+                    </li>
+                    <li>
+                        <NavLink to={'/category/Jeans'}>
+                        <img src="../images/escudobrasil.jpg" alt='Logo Afa'/>
+                        </NavLink>    
+                    </li>
+                    <li>
+                        <NavLink to={'/category/Jeans'}>
+                        <img src="../images/escudoinglaterra (1).jpg" alt='Logo Afa'/>
+                        </NavLink>    
+                    </li>
+                    <li>
+                        <NavLink to={'/category/Jeans'}>
+                        <img src="../images/escudosuecia.jpg" alt='Logo Afa'/>
                         </NavLink>    
                     </li>
                 
