@@ -14,9 +14,9 @@ export const CartWidget = () => {
     <div>
             {cart.length === 0 ? ('') : (
           <>
-          <Button variant="primary">
-          <img src="../images/cart.svg" alt="carrito" className="carrito"/> <Badge bg="secondary">{cart.length} </Badge>
-          <span className="visually-hidden">unread messages</span>
+          <Button className='cart' variant="warning">
+              <img src="../images/cart.svg" alt="carrito" className="carrito"/> <Badge bg="danger">{cart.length} </Badge>
+              <span className="visually-hidden">unread messages</span>
         </Button>
           </>
         )}
