@@ -29,8 +29,7 @@
     color: whitesmoke;
 }
 .vaciar{
-    display: flex;
-    justify-content: center;
+    margin-left: 640px;
 }
 h3{
     text-align: center;

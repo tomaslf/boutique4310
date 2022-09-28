@@ -1,5 +1,4 @@
 import './ItemDetailContainer.css';
-import Products from '../ItemListContainer/Products/Products';
 import ItemDetail from './ItemDetail/ItemDetail';
 import { useState, useEffect } from 'react';
 import {useParams} from 'react-router-dom';
@@ -18,11 +17,10 @@ const ItemDetailContainer = () => {
       const queryDoc = doc(db, 'item', id);
       getDoc(queryDoc)
       .then((res)=> {
-        setProductItem(res.data())
-      });
+        setProductItem({id:res.id, ...res.data()});
+      })
     }
      
-    
     useEffect(() =>{
         getItem()
         },[id]);

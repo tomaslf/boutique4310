@@ -1,8 +1,8 @@
 import './ItemDetail.css'
 import ItemCount from '../../ItemListContainer/ItemCount/ItemCount';
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Button from 'react-bootstrap/Button';
+import {Button, Spinner} from 'react-bootstrap';
 import { CartContext } from '../../../context/CartContext';
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -14,12 +14,23 @@ const ItemDetail = ({item}) => {
   const onAdd = (item) =>{
     addToCart(item, initialState)  
  };
- 
+  const [loader, setLoader] = useState(true); 
+      useEffect (() => {
+        setTimeout(() => {
+          setLoader(false);
+        }, 1000)
+      });
 
   return (   
     <div>  
-        
-        <div className='card-detail' >
+      {loader ? <>
+        <Spinner variant='danger mt-5' animation="border" role="status">
+            <span className="visually-hidden">Loading...</span>
+      </Spinner>
+      </>
+      :
+      <>
+          <div className='card-detail' >
           <div className='card-carousel'>
               <Carousel>
                 <Carousel.Item>
@@ -59,6 +70,8 @@ const ItemDetail = ({item}) => {
                 )} 
             </div>   
         </div>
+      </>}
+        
     </div>
   )
 }
