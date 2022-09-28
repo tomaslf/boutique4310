@@ -45,7 +45,7 @@ const ItemListContainer = ({greeting} ) => {
       useEffect (() => {
         setTimeout(() => {
           setLoader(false);
-        }, 2000)
+        }, 2500)
       })
 
 

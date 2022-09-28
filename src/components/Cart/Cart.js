@@ -23,8 +23,8 @@ const Cart = () => {
           (
             <>
             
-                {cart.map((item) =>(    
-                    <div key={item.id} className="cart-view">
+                {cart.map((item) =>(       
+                <div key={item.id} className="cart-view">
                         <img className='cart-img' src={rutaInicial + item.img} alt='Camisetas Mundiales' />
                         <h3>{item.name} </h3>
                         <strong><p>${item.price} </p></strong>
@@ -34,7 +34,7 @@ const Cart = () => {
                               <Button className='mb-3' variant='danger' onClick={()=> removeItem(item.id)} >Eliminar Articulo</Button>
                               <Link to={'/'}><Button variant='primary' >Seguir Comprando</Button></Link>
                             </div>  
-                    </div>     
+                </div>     
             ))}
                   <Button className='vaciar' variant='danger' onClick={()=> clear()} >Vaciar Carrito</Button>
                   

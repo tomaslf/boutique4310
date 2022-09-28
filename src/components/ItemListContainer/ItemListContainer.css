@@ -17,18 +17,9 @@ p{
   pointer-events: none;
   margin-left: 515px;
   margin-top: 35px;
+  animation: 1.5s infinite rodar;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .ball-img {
-    animation: ball-img-spin infinite 20s linear;
-  }
-}
-@keyframes ball-img-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+@keyframes rodar {
+  100% {transform: rotate(360deg);}
+};

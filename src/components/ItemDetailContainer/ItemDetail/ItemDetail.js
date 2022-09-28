@@ -59,8 +59,8 @@ const ItemDetail = ({item}) => {
             <div className='detail'>
                  
                   <h2>{item.name}</h2>
-                  <h4>{item.description} </h4>
                   <h5>$ {item.price} </h5>
+                  <h4>{item.description} </h4>
                   <ItemCount  setInitialState = {setInitialState} initialState = {initialState} />
                   <Button className='mt-3'  variant='secondary' onClick={()=> onAdd(item)} >Agregar al Carrito</Button>
                   {cart.length === 0 ? ('') : (

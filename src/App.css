@@ -7,10 +7,10 @@
   
 }
 html{ 
-  background-color: black;
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.9136029411764706) 60%);
 }
 .App{
-  background-color: black;
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.9136029411764706) 60%);
   
   
 }
