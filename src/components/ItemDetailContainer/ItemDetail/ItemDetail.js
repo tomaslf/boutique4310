@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 import { CartContext } from '../../../context/CartContext';
 import Carousel from 'react-bootstrap/Carousel';
 
-
+const rutaInicial = '../images/'
 const ItemDetail = ({item}) => {
 
   const {cart, addToCart} = useContext(CartContext);
@@ -25,21 +25,21 @@ const ItemDetail = ({item}) => {
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src={item.img}
+                    src={rutaInicial +item.img}
                     alt="First slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src={item.img2}
+                    src={rutaInicial + item.img2}
                     alt="Second slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img id='img3'
                     className="d-block w-100"
-                    src={item.img3}
+                    src={rutaInicial + item.img3}
                     alt="Third slide"
                   />
                 </Carousel.Item>

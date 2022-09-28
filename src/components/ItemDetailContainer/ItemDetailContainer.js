@@ -3,29 +3,29 @@ import Products from '../ItemListContainer/Products/Products';
 import ItemDetail from './ItemDetail/ItemDetail';
 import { useState, useEffect } from 'react';
 import {useParams} from 'react-router-dom';
+import {getFirestore, doc, getDoc} from 'firebase/firestore'
 
 
 
 const ItemDetailContainer = () => {
-    
-
+    const db = getFirestore();
     const [productItem, setProductItem] = useState([]);
     
     const {id} = useParams() ;
 
-    const getItem =  new Promise ((resolve,reject) =>{
-      setTimeout(() => {
-        resolve(Products);
-        reject("ERROR");
-      })
-     })
+    const getItem =  () =>{
+      
+      const queryDoc = doc(db, 'item', id);
+      getDoc(queryDoc)
+      .then((res)=> {
+        setProductItem(res.data())
+      });
+    }
+     
     
     useEffect(() =>{
-        getItem.then((response)=>{
-          const filtrarItem = response.filter ((prod) => prod.id === id );
-          setProductItem(...filtrarItem);
-        })
-    });
+        getItem()
+        },[id]);
 
   
 

@@ -1,10 +1,13 @@
 const Products = [
     {
         id: '1',
-        name: 'Remera Zara',
+        name: 'Camiseta',
         price: '2000',
         img: '../images/remera.jpg',
-        category: 'Remeras'
+        img2: '../images/beckham-england2.png',
+        img3: '../images/beckham.jpg',
+        description: 'Camiseta David Beckham  - Inglaterra - Mundial 2006 ',
+        category: 'Argentina'
 
     },
     {
