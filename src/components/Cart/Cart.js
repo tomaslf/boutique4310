@@ -36,8 +36,10 @@ const Cart = () => {
                             </div>  
                 </div>     
             ))}
-                  <Button className='vaciar' variant='danger' onClick={()=> clear()} >Vaciar Carrito</Button>
-                  
+                <div className='botonesFinales'>
+                    <Button className='vaciar' variant='danger' onClick={()=> clear()} >Vaciar Carrito</Button>
+                    <Button className='finalizar' variant='success'  >Finalizar Compra</Button>
+                </div>    
             </>
             )};     
     </div>);
