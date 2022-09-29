@@ -1,8 +1,8 @@
 .card-detail{
-    box-shadow: 10px 20px 10px rgba(226, 219, 219, 0.37);
+    box-shadow: 0px 0px 10px rgb(100, 93, 93);
     border-radius: 15px;
     margin-bottom: 45px;
-    background-image: linear-gradient(to bottom, whitesmoke,rgba(245, 245, 245, 0.582));
+    background-color:  linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.9136029411764706) 60%);
     width: 900px; 
     height: 500px;
     text-align: center;
@@ -26,6 +26,7 @@
 }
 .detail h2{
     margin-bottom: 40px;
+    color: whitesmoke;
 
 }
 .detail h4{
@@ -33,11 +34,13 @@
     margin-top: 20px;
     font-weight: lighter;
     text-align: start;
+    color: whitesmoke;
 }
 .detail h5{
     font-size: 30px;
     text-align: start;
     font-weight: bold;
+    color: whitesmoke;
 }
 .card-carousel{
     width: 395px;
