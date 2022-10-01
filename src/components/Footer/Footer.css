@@ -1,0 +1,69 @@
+.footer{
+    background-color: #ffffff;
+    border: solid 1px rgb(224, 163, 72);
+    display: flex;
+    justify-content: space-between;
+  }
+ 
+ .footer ul li a{
+    text-decoration: none;
+    color: rgb(41, 38, 38);
+}
+.footer h5{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+.mapaSitio{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    font-size: 25px;  
+    font-weight: 500;
+    list-style: none;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: lighter;
+}  
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    font-size: 25px;  
+    font-weight: 500;
+    list-style: none;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-right: 25px;
+    font-weight: lighter;
+}
+.contactanos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    font-size: 25px;  
+    font-weight: 500;
+    list-style: none;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: lighter;
+}
+img {
+    margin-right: 10px;
+}
+
+.subFooter{
+    background-color: #746b6b;
+    border: solid 1px rgb(224, 163, 72);
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+    
+}
+.subFooter p a{
+    text-decoration: none;
+}
