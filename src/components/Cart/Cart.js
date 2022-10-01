@@ -27,7 +27,7 @@ const Cart = () => {
               price: item.price,
               cantidad: item.cantidad,
             })),
-            date: moment().subtract(10, 'days').calendar(),
+            date: moment().calendar(),
             total: total,
         };
     const query = collection(db, "orders");
