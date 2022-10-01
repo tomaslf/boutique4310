@@ -1,5 +1,5 @@
 .footer{
-    background-color: #ffffff;
+    background-color: #A27B5C;
     border: solid 1px rgb(224, 163, 72);
     display: flex;
     justify-content: space-between;
@@ -57,11 +57,11 @@ img {
 }
 
 .subFooter{
-    background-color: #746b6b;
+    background-color: #DCD7C9;
     border: solid 1px rgb(224, 163, 72);
     display: flex;
     justify-content: space-between;
-    color: whitesmoke;
+    color: black;
     
 }
 .subFooter p a{

@@ -2,12 +2,16 @@
   text-align: center;
   margin-top: 20px;
   font-size: 50px;
-  color: whitesmoke;
+  color: black;
 }
 p{
     text-align: justify;
     margin: 20px;
-}   
+} 
+.diego{
+  width: 500px;
+  height: 350px;
+}  
 .loader{
   text-align: center;
   font-size: 50px;

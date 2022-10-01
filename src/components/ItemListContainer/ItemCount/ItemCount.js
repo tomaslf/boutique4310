@@ -8,7 +8,7 @@ const ItemCount = ({initialState, setInitialState}) => {
         if(initialState <= 4) {
             setInitialState (initialState + 1);        
         }else{
-          alert("Solo contamos con 5 unidades de este producto");   
+           
       }
         
     }
@@ -16,7 +16,7 @@ const ItemCount = ({initialState, setInitialState}) => {
         if(initialState > 0) {
             setInitialState (initialState - 1);
         }else{
-            alert("Opción incorrecta");   
+              
         }        
     };
     return (

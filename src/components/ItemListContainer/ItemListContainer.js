@@ -51,9 +51,9 @@ const ItemListContainer = ({greeting} ) => {
 
     return (
       <div>
-          
           <h1 className="titulo" >{greeting}</h1>
-       {loader ?<img className='ball-img' alt='Old Football' src='../images/ball.png'/> : <ItemList list= {ProductList}/> }     
+
+       {loader ? <img className='ball-img' alt='Old Football' src='../images/ball.png'/> : <ItemList list= {ProductList}/> }     
     </div>
       
     )
