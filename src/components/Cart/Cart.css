@@ -47,3 +47,13 @@ h3{
     display: flex;
     justify-content: space-evenly;
   }
+  .totalCompra{
+    background-color: rgba(150, 122, 122, 0.432);
+    text-align: center;
+    border: solid 0.5px rgba(0, 0, 0, 0.397);
+    margin: 10px;
+    margin-top: 25px;
+    padding: 5px;
+    transition: 0.5s;
+    font-size: 35px;
+  }
