@@ -2,7 +2,7 @@ import './Cart.css'
 import { useContext } from 'react';
 import { CartContext } from "../../context/CartContext";
 import { Button ,Alert } from 'react-bootstrap';
-import { Link, NavLink } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
@@ -18,16 +18,29 @@ const Cart = () => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
+    const [inputName, setInputName] = useState("");
+    const [inputEmail, setInputEmail] = useState("");
+    const [inputPhone, setInputPhone] = useState("");
+    const nameEvent = (e) => {
+      setInputName(e.target.value);
+    };
+    const emailEvent = (e) => {
+      setInputEmail(e.target.value)
+      if(setInputEmail === ""){
+        alert("Completa");
+      };
+    };
+    const phoneEvent = (e) => {
+      setInputPhone(e.target.value);
+    };
     const createOrder = () =>{
         const db = getFirestore();
         clear();
-        
         const orden = {
             user: {
-                name: "Tomas",
-                email: "tomas@hotmail.com",
-                phone: "1158550197"
+                name: inputName,
+                email: inputEmail,
+                phone: inputPhone
             },
             detalle:cart.map((item) => ({
               name: item.name,
@@ -41,9 +54,11 @@ const Cart = () => {
     addDoc(query, orden)
     .then(({ id }) => {
       Swal.fire({
+        icon: 'success',
         title: "Gracias por tu compra",
-       text: `Este es tu número de factura: ${id}`,
-       confirmButtonText:`${<NavLink to={"/"}>OK</NavLink>}`, 
+        text: `Este es tu número de factura: ${id}`,
+       }).then (function(){
+              window.location = "/"
        })})
     .catch(() => alert("Hubo un error al procesar tu compra"))
     };
@@ -60,10 +75,8 @@ const Cart = () => {
               <Link to={'/'}><h3>Ver Productos</h3></Link>
             </>
            ) : 
-          (
-            <>
-            
-                {cart.map((item) =>(       
+          (<>
+             {cart.map((item) =>(       
                 <div key={item.id} className="cart-view">
                     <img className='cart-img' src={rutaInicial + item.img} alt='Camisetas Mundiales' />
                     <h3>{item.name} </h3>
@@ -73,8 +86,8 @@ const Cart = () => {
                         <div className='botones'>
                             <Button className='mb-3' variant='outline-danger' onClick={()=> removeItem(item.id)} >Eliminar Articulo</Button>
                             <Link to={'/'}><Button variant='outline-primary' >Seguir Comprando</Button></Link>
-                        </div>  
-                </div>     
+                      </div>  
+              </div>     
             ))}
                 <div className='totalCompra'> Total ${total} </div>
                 <div className='botonesFinales'>
@@ -90,12 +103,13 @@ const Cart = () => {
                                             El monto total de su compra es de ${total}
                                     </Alert>
                                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                                        <Form.Label>Ingrese su Nombre y Apellido</Form.Label>
+                                        <Form.Label >Ingrese su Nombre y Apellido</Form.Label>
                                         <Form.Control
+                                          
                                           type="text"
                                           placeholder="Nombre y Apellido"
                                           autoFocus
-                                        />
+                                          onChange={nameEvent}/>
                                       </Form.Group>
                                       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                                         <Form.Label>Correo Electrónico</Form.Label>
@@ -103,6 +117,7 @@ const Cart = () => {
                                           type="email"
                                           placeholder="name@example.com"
                                           autoFocus
+                                          onChange={emailEvent}
                                         />
                                       </Form.Group>
                                       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -111,6 +126,7 @@ const Cart = () => {
                                           type="number"
                                           placeholder='Teléfono'
                                           autoFocus
+                                          onChange={phoneEvent}
                                         />
                                       </Form.Group>
                                 </Form>
