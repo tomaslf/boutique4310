@@ -24,7 +24,7 @@ const ItemDetail = ({item}) => {
   return (   
     <div>  
       {loader ? <>
-        <Spinner variant='danger mt-5' animation="border" role="status">
+        <Spinner className='spinner' variant='danger mt-5' animation="border" role="status">
             <span className="visually-hidden">Loading...</span>
       </Spinner>
       </>

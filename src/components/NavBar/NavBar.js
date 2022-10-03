@@ -34,7 +34,7 @@ const NavBar = () => {
                 </ul>
             </div> 
             <div className='navBar2'>
-                <div className='category'>Nuestras Camisetas</div>
+                <div className='category'>NUESTRAS CAMISETAS</div>
                 <ul>
                     <li>
                         <NavLink to={'/category/Argentina'}>
@@ -43,27 +43,27 @@ const NavBar = () => {
                     </li>
                     <li>
                         <NavLink to={'/category/Alemania'}>
-                        <img src="../images/escudoalemania.jpg" alt='Logo Afa'/>
+                                <img src="../images/escudoalemania.jpg" alt='Logo Afa'/>
                         </NavLink>
                     </li>
                     <li>
                         <NavLink to={'/category/Francia'}>
-                        <img src="../images/escudofrancia.jpg" alt='Logo Afa'/>
+                                <img src="../images/escudofrancia.jpg" alt='Logo Afa'/>
                         </NavLink>    
                     </li>
                     <li>
                         <NavLink to={'/category/Brasil'}>
-                        <img src="../images/escudobrasil.jpg" alt='Logo Afa'/>
+                                <img src="../images/escudobrasil.jpg" alt='Logo Afa'/>
                         </NavLink>    
                     </li>
                     <li>
                         <NavLink to={'/category/Inglaterra'}>
-                        <img src="../images/escudoinglaterra (1).jpg" alt='Logo Afa'/>
+                                <img src="../images/escudoinglaterra (1).jpg" alt='Logo Afa'/>
                         </NavLink>    
                     </li>
                     <li>
                         <NavLink to={'/category/Suecia'}>
-                        <img src="../images/escudosuecia.jpg" alt='Logo Afa'/>
+                                <img src="../images/escudosuecia.jpg" alt='Logo Afa'/>
                         </NavLink>    
                     </li>
                 

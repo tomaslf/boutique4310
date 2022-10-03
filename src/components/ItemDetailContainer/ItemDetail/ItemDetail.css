@@ -2,7 +2,7 @@
     box-shadow: 0px 0px 10px rgb(100, 93, 93);
     border-radius: 15px;
     margin-bottom: 45px;
-    background-color:  linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.9136029411764706) 60%);
+    background-color:  whitesmoke;
     width: 900px; 
     height: 500px;
     text-align: center;
@@ -26,7 +26,7 @@
 }
 .detail h2{
     margin-bottom: 40px;
-    color: whitesmoke;
+    color: black;
 
 }
 .detail h4{
@@ -34,13 +34,13 @@
     margin-top: 20px;
     font-weight: lighter;
     text-align: start;
-    color: whitesmoke;
+    color: black;
 }
 .detail h5{
     font-size: 30px;
     text-align: start;
     font-weight: bold;
-    color: whitesmoke;
+    color:black;
 }
 .card-carousel{
     width: 395px;
@@ -55,4 +55,8 @@
 }
 .card-detail Button{
     margin-bottom: 15px;
+}
+.spinner{
+    margin-top: 60px;
+    margin-bottom: 60px;
 }

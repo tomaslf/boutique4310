@@ -1,6 +1,6 @@
 .navBar{
-  background-color: #a6acb8;
-  border: solid 1px rgb(224, 163, 72);
+  background-color: #2C3639;
+  border: solid 0.5px rgb(224, 163, 72);
 }
 .navBar ul{
     margin-top: 0px;
@@ -13,19 +13,19 @@
   .navBar ul li a{
     text-decoration: none;
     font-size: 25px;
-    color: rgb(41, 38, 38);
+    color:whitesmoke;
     font-weight: 500;
   }
- 
+
 .category{
-  font-size: 35px;
-  color: rgb(8, 8, 8);
+  font-size: 30px;
+  color: whitesmoke;
   text-align: center;
   margin-bottom: 20px;
   
 }
 .navBar2{
-  background-color:whitesmoke;
+  background-color:#3F4E4F;
   padding: 20px;
   border: solid 1px rgb(224, 163, 72);
  
@@ -50,12 +50,11 @@
     margin-top: 15px;
   } 
   .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-    width: 270px;
-    height: 140px;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin-top: 8px;
+    
+    width: 220px;
+    height: 120px;
+    
   }
   .rojo{
     background-color: black;

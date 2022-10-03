@@ -2,12 +2,16 @@
   text-align: center;
   margin-top: 20px;
   font-size: 50px;
-  color: whitesmoke;
+  color: black;
 }
 p{
     text-align: justify;
     margin: 20px;
-}   
+} 
+.diego{
+  width: 500px;
+  height: 350px;
+}  
 .loader{
   text-align: center;
   font-size: 50px;
@@ -18,8 +22,13 @@ p{
   margin-left: 515px;
   margin-top: 35px;
   animation: 1.5s infinite rodar;
+  margin-bottom: 40px;
 }
 
 @keyframes rodar {
   100% {transform: rotate(360deg);}
 };
+
+.portada img{
+  height: 250px;
+}
