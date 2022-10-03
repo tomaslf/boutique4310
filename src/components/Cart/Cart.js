@@ -62,7 +62,7 @@ const Cart = () => {
        })})
     .catch(() => alert("Hubo un error al procesar tu compra"))
     };
-
+    
  
   return (
     <div>
@@ -99,46 +99,52 @@ const Cart = () => {
                           </Modal.Header>
                             <Modal.Body>
                               <Form>
-                                    <Alert className='text-center' variant='success'>
+                                  <Alert className='text-center' variant='success'>
                                             El monto total de su compra es de ${total}
-                                    </Alert>
-                                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                                        <Form.Label >Ingrese su Nombre y Apellido</Form.Label>
-                                        <Form.Control
-                                          
-                                          type="text"
+                                  </Alert>
+                                  <Form.Group className="mb-3 " hasValidation controlId="exampleForm. ControlInput1">
+                                      <Form.Label >Ingrese su Nombre y Apellido</Form.Label>
+                                      <Form.Control
+                                          type="text" required isInvalid
                                           placeholder="Nombre y Apellido"
                                           autoFocus
                                           onChange={nameEvent}/>
-                                      </Form.Group>
-                                      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                                        <Form.Control.Feedback type="invalid">
+                                                Por favor ingrese su nombre y apellido.
+                                        </Form.Control.Feedback>
+                                  </Form.Group>
+                                  <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                                         <Form.Label>Correo Electrónico</Form.Label>
                                         <Form.Control
-                                          type="email"
+                                          type="email" required isInvalid
                                           placeholder="name@example.com"
                                           autoFocus
                                           onChange={emailEvent}
                                         />
-                                      </Form.Group>
-                                      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                                        <Form.Control.Feedback type="invalid">
+                                                Por favor ingrese una dirección de correo.
+                                        </Form.Control.Feedback>
+                                  </Form.Group>
+                                  <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                                         <Form.Label>Teléfono</Form.Label>
                                         <Form.Control
-                                          type="number"
+                                          type="number" required isInvalid
                                           placeholder='Teléfono'
                                           autoFocus
                                           onChange={phoneEvent}
                                         />
-                                      </Form.Group>
+                                        <Form.Control.Feedback type="invalid">
+                                               Por favor ingrese un número de teléfono.
+                                        </Form.Control.Feedback>
+                                  </Form.Group>
+                                      <Button variant="secondary" onClick={handleClose}>
+                                              Cerrar
+                                      </Button>
+                                      <Button variant="success" onClick={createOrder}>
+                                              Comprar
+                                      </Button>
                                 </Form>
-                              </Modal.Body>
-                          <Modal.Footer>
-                            <Button variant="secondary" onClick={handleClose}>
-                              Cerrar
-                            </Button>
-                                <Button variant="success" onClick={createOrder}>
-                                      Comprar
-                                </Button>
-                          </Modal.Footer>
+                            </Modal.Body>
                       </Modal>
                 </div>    
             </>

@@ -28,3 +28,7 @@ p{
 @keyframes rodar {
   100% {transform: rotate(360deg);}
 };
+
+.portada img{
+  height: 250px;
+}
