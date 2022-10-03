@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/boutique4310/static/css/main.da5382d8.css",
+    "main.js": "/boutique4310/static/js/main.f5c43a0b.js",
+    "static/js/787.0d551968.chunk.js": "/boutique4310/static/js/787.0d551968.chunk.js",
+    "index.html": "/boutique4310/index.html",
+    "main.da5382d8.css.map": "/boutique4310/static/css/main.da5382d8.css.map",
+    "main.f5c43a0b.js.map": "/boutique4310/static/js/main.f5c43a0b.js.map",
+    "787.0d551968.chunk.js.map": "/boutique4310/static/js/787.0d551968.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da5382d8.css",
+    "static/js/main.f5c43a0b.js"
+  ]
+}
