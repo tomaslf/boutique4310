@@ -5,14 +5,16 @@
 # Proyecto Boutique 4310 - Camisetas Mundiales
 
 
-## Demo [link](https://boutique4310.vercel.app/)
-
-Aqui puedes visitar la demo de la Web
-
-<img src="public/images/videogif.gif" >
+## Demo de la web [link](https://boutique4310.vercel.app/)
 
 
+### Website Sneak peak
 
-Autor:
+
+
+![videogif](https://user-images.githubusercontent.com/104037738/193885609-9afdf981-bab7-4ba6-8dd9-881f4cca9e88.gif)
+
+
+Author:
 
 ## Tomás Ferreyra Contacto: [link](https://www.linkedin.com/in/tom%C3%A1s-luciano-ferreyra-a24227229)
