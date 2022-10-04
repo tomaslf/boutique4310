@@ -19,7 +19,7 @@ const NavBar = () => {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to={'/'} 
+                        <NavLink to={'/productos'} 
                        >
                                 Productos
                         </NavLink>    

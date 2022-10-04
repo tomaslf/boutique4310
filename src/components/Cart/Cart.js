@@ -1,7 +1,7 @@
 import './Cart.css'
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { CartContext } from "../../context/CartContext";
-import { Button ,Alert } from 'react-bootstrap';
+import { Button ,Alert, ModalFooter } from 'react-bootstrap';
 import { Link} from 'react-router-dom';
 import { useState } from 'react';
 import Form from 'react-bootstrap/Form';
@@ -24,10 +24,7 @@ const Cart = () => {
       setInputName(e.target.value);
     };
     const emailEvent = (e) => {
-      setInputEmail(e.target.value)
-      if(setInputEmail === ""){
-        alert("Completa");
-      };
+      setInputEmail(e.target.value);
     };
     const phoneEvent = (e) => {
       setInputPhone(e.target.value);
@@ -61,20 +58,33 @@ const Cart = () => {
        })})
     .catch(() => alert("Hubo un error al procesar tu compra"))
     };
+    const [loader, setLoader] = useState(true); 
+      useEffect (() => {
+        setTimeout(() => {
+          setLoader(false);
+        }, 5000)
+      });
     
  
   return (
     <div>
-            <h1 className='cart-title'>PRODUCTOS ELEGIDOS</h1>
+            
                {cart.length === 0 ? (
             <>
-            <Alert className='text-center' variant='danger'>
-               NO TENES PRODUCTOS AGREGADOS
-          </Alert>
-              <Link to={'/'}><h3>Ver Productos</h3></Link>
+                 {loader ?  <img className='ball-img' alt='Old Football' src='../images/ball.png'/> :
+                  <>
+                  <Alert className='text-center mt-5' variant='danger'>
+                      NO TENES PRODUCTOS AGREGADOS   
+                  </Alert>
+                  <Link to={"/"}><h3>Ver Productos</h3></Link>
+                  </>
+                  
+         }
+            
             </>
            ) : 
           (<>
+          <h1 className='cart-title'>PRODUCTOS ELEGIDOS</h1>
              {cart.map((item) =>(       
                 <div key={item.id} className="cart-view">
                     <img className='cart-img' src={rutaInicial + item.img} alt='Camisetas Mundiales' />
@@ -136,15 +146,19 @@ const Cart = () => {
                                                Por favor ingrese un número de teléfono.
                                         </Form.Control.Feedback>
                                   </Form.Group>
-                                      <Button variant="secondary" onClick={handleClose}>
-                                              Cerrar
-                                      </Button>
-                                      <Button variant="success" onClick={createOrder}>
-                                              Comprar
-                                      </Button>
                                 </Form>
                             </Modal.Body>
+                            <ModalFooter>
+                                <Button variant="secondary" onClick={handleClose}>
+                                                  Cerrar
+                                </Button>
+                                <Button variant="success" onClick={createOrder}>
+                                        Comprar
+                                </Button>    
+                            </ModalFooter>   
                       </Modal>
+                 
+
                 </div>    
             </>
             )};     

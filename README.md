@@ -1,4 +1,4 @@
-<img src="public/images/logocircu.png" width=200px height=200px>
+<img src="public/images/brandlogo.png" width=200px height=200px>
 
 
 # Proyecto CircuLando

@@ -32,6 +32,7 @@ export const CartProvider = ({children}) => {
     setCart(nuevoArreglo);
 };
   const clear = () =>{
+    
     setCart([]);
   }
 
