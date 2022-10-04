@@ -12,7 +12,6 @@ import Swal from "sweetalert2";
 
 const rutaInicial = '../images/'
 const Cart = () => {
-
     const {cart , removeItem, clear} = useContext(CartContext);
     const total = cart.reduce((previousValue, currentValue)=> previousValue + currentValue.price * currentValue.cantidad,0 );
     const [show, setShow] = useState(false);
