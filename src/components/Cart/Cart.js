@@ -94,13 +94,13 @@ const Cart = () => {
                     <h4>Precio total : $ {item.price * item.cantidad} </h4>
                         <div className='botones'>
                             <Button className='mb-3' variant='outline-danger' onClick={()=> removeItem(item.id)} >Eliminar Articulo</Button>
-                            <Link to={'/productos'}><Button variant='outline-primary' >Seguir Comprando</Button></Link>
                       </div>  
               </div>     
             ))}
                 <div className='totalCompra'> Total ${total} </div>
                 <div className='botonesFinales'>
                     <Button className='vaciar' variant='danger' onClick={()=> clear()} >Vaciar Carrito</Button>
+                    <Link to={'/productos'}><Button variant='primary' >Seguir Comprando</Button></Link>
                     <Button variant="success" onClick={handleShow}> Finalizar Compra</Button>
                       <Modal show={show} onHide={handleClose}>
                           <Modal.Header closeButton>

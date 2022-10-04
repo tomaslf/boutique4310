@@ -65,7 +65,12 @@ const ItemDetail = ({item}) => {
                   <Button className='mt-3'  variant='secondary' onClick={()=> onAdd(item)} >Agregar al Carrito</Button>
                   {cart.length === 0 ? ('') : (
                 <>
-                <Link to={'/cart/'} ><Button variant='success' >Ir a pagar</Button></Link>
+                <div>
+                    
+                    <Link to={'/productos'}><Button className="me-3" variant='primary' >Seguir Comprando</Button></Link>
+                    <Link to={'/cart/'} ><Button  variant='success' >Ir a pagar</Button></Link>
+                </div>
+                
                 </>
                 )} 
             </div>   
