@@ -5,11 +5,14 @@
 # Proyecto Boutique 4310 - Camisetas Mundiales
 
 
-## Demo [link](https://boutique4310.vercel.app/)
+## Demo de la web [link](https://boutique4310.vercel.app/)
+
 
 ### Website Sneak peak
 
-![videgif](https://user-images.githubusercontent.com/104037738/193884708-aa3390ea-c63e-480c-8545-1fc450b6bca9.gif)
+
+
+![videogif](https://user-images.githubusercontent.com/104037738/193885609-9afdf981-bab7-4ba6-8dd9-881f4cca9e88.gif)
 
 
 Author:
