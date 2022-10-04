@@ -19,13 +19,14 @@
 
 .category{
   font-size: 30px;
-  color: whitesmoke;
+  color: black;
   text-align: center;
   margin-bottom: 20px;
+  font-weight: bold;
   
 }
 .navBar2{
-  background-color:#3F4E4F;
+  background-color:#848b8b;
   padding: 20px;
   border: solid 1px rgb(224, 163, 72);
  
@@ -65,7 +66,8 @@
     color: aqua;
   }
   .navBar2 ul li img{
-    
+    box-shadow: 0px 0px 10px black;
+    border-radius: 15px;
     transition: 0.4s;
   }
   .navBar2 ul li img:hover{
