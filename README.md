@@ -1,10 +1,17 @@
 <img src="public/images/brandlogo.png" width=250px height=200px>
 
+# ECOMMERCE Project React JS
 
-# Proyecto CircuLando
+# Proyecto Boutique 4310 - Camisetas Mundiales
 
 
-## Demo
+## Demo [link](https://boutique4310.vercel.app/)
 
-Proximamente podrás ver el contenido de nuestra nueva Web
+Aqui puedes visitar la demo de la Web
 
+<video src="public/images/Boutique-4310.mp4" autoplay loop muted></video> 
+
+
+Autor:
+
+Tomás Ferreyra Contacto: [link](https://www.linkedin.com/in/tom%C3%A1s-luciano-ferreyra-a24227229)
