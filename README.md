@@ -9,7 +9,8 @@
 
 Aqui puedes visitar la demo de la Web
 
-<video src="public/images/Boutique-4310.mp4" ></video> 
+<img src="public/images/videogif.gif" >
+
 
 
 Autor:
