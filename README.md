@@ -9,9 +9,9 @@
 
 Aqui puedes visitar la demo de la Web
 
-<video src="public/images/Boutique-4310.mp4" autoplay loop muted></video> 
+<video src="public/images/Boutique-4310.mp4" ></video> 
 
 
 Autor:
 
-Tomás Ferreyra Contacto: [link](https://www.linkedin.com/in/tom%C3%A1s-luciano-ferreyra-a24227229)
+## Tomás Ferreyra Contacto: [link](https://www.linkedin.com/in/tom%C3%A1s-luciano-ferreyra-a24227229)
