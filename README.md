@@ -1,4 +1,4 @@
-<img src="public/images/brandlogo.png" width=250px height=200px>
+<img src="public/images/brandlogo.png" width=300px height=200px>
 
 # ECOMMERCE Project React JS
 
