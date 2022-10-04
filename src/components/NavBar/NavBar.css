@@ -67,7 +67,7 @@
   }
   .navBar2 ul li img{
     box-shadow: 0px 0px 10px black;
-    border-radius: 15px;
+    border-radius: 16px;
     transition: 0.4s;
   }
   .navBar2 ul li img:hover{
