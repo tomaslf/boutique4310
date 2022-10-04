@@ -62,7 +62,7 @@ const Cart = () => {
       useEffect (() => {
         setTimeout(() => {
           setLoader(false);
-        }, 5000)
+        }, 6500)
       });
     
  
