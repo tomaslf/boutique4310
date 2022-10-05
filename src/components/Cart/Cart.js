@@ -90,11 +90,21 @@ const Cart = () => {
           <h1 className='cart-title'>PRODUCTOS ELEGIDOS</h1>
              {cart.map((item) =>(       
                 <div key={item.id} className="cart-view">
-                    <img className='cart-img' src={rutaInicial + item.img} alt='Camisetas Mundiales' />
-                    <h3>{item.name} </h3>
-                    <strong><p>${item.price} </p></strong>
-                    <strong><p>{item.cantidad} </p></strong>
-                    <h4>Sub-total : $ {item.price * item.cantidad} </h4>
+                    <div>
+                        <img className='cart-img' src={rutaInicial + item.img} alt='Camisetas Mundiales' />
+                    </div>
+                    <div className='max'>
+                        <h3>{item.name} </h3>
+                    </div>
+                    <div className='max'>
+                        <strong><p>${item.price} </p></strong>
+                    </div>
+                    <div className='max'>
+                        <strong><p>{item.cantidad} </p></strong>
+                    </div>
+                    <div className='max'>
+                        <h4>Sub-total : ${item.price * item.cantidad} </h4>
+                    </div>
                         <div className='botones'>
                             <Button className='mb-3' variant='outline-danger' onClick={()=> removeItem(item.id)} >Eliminar Articulo</Button>
                       </div>  

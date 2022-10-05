@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import {useParams} from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 import {getFirestore, getDocs, collection, query, where} from 'firebase/firestore'
+import {Animated} from "react-animated-css";
 
 
 const ItemListContainer = ({greeting} ) => {
@@ -57,36 +58,38 @@ const ItemListContainer = ({greeting} ) => {
 
     return (
       <div>
-    <Carousel className='portada' activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="../images/diegomaradona.jpg"
-          alt="First slide" height={600}
-        />
-    
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-        height={600}
-          className="d-block w-100"
-          src="../images/argentinamundial.jpg"
-          alt="Second slide"
-        />
+            <Animated animationIn="fadeIn" isVisible={true}>
+              <Carousel className='portada' activeIndex={index} onSelect={handleSelect}>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src="../images/diegomaradona.jpg"
+                    alt="First slide" height={600}
+                  />
+              
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                  height={600}
+                    className="d-block w-100"
+                    src="../images/argentinamundial.jpg"
+                    alt="Second slide"
+                  />
 
-      
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-        height={600}
-          className="d-block w-100"
-          src="../images/brasilcampeon.jpg"
-          alt="Third slide"
-        />
+                
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                  height={600}
+                    className="d-block w-100"
+                    src="../images/brasilcampeon.jpg"
+                    alt="Third slide"
+                  />
 
-       
-      </Carousel.Item>
-    </Carousel>
+                
+                </Carousel.Item>
+              </Carousel>
+            </Animated>  
         <h1 className="titulo" >{greeting}</h1>
        {loader ? <img className='ball-img' alt='Old Football' src='../images/ball.png'/> : <ItemList list= {ProductList}/> }     
     </div>

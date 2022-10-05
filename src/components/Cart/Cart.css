@@ -37,6 +37,10 @@
 h3{
     text-align: center;
 }
+.max{
+    max-width: 150px;
+    text-align: center;
+}
 .cart{
     position: fixed;
     line-height: 40px;
