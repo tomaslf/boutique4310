@@ -53,6 +53,9 @@ const Cart = () => {
         icon: 'success',
         title: "Gracias por tu compra",
         text: `Este es tu número de factura: ${id}`,
+        background: '#2C3639',
+        color: '#ffffff',
+        confirmButtonColor: '#000000'
        }).then (function(){
               window.location = "/"
        })})
@@ -91,7 +94,7 @@ const Cart = () => {
                     <h3>{item.name} </h3>
                     <strong><p>${item.price} </p></strong>
                     <strong><p>{item.cantidad} </p></strong>
-                    <h4>Precio total : $ {item.price * item.cantidad} </h4>
+                    <h4>Sub-total : $ {item.price * item.cantidad} </h4>
                         <div className='botones'>
                             <Button className='mb-3' variant='outline-danger' onClick={()=> removeItem(item.id)} >Eliminar Articulo</Button>
                       </div>  

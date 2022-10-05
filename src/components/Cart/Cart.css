@@ -31,6 +31,7 @@
     margin-top: 15px;
     margin-bottom: 30px;
     color: black;
+    font-weight: bold;
 }
 
 h3{
@@ -46,6 +47,7 @@ h3{
 .botonesFinales{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 35px;
   }
   .totalCompra{
     background-color: whitesmoke;
