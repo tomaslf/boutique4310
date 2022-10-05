@@ -2,12 +2,12 @@ import './NavBar.css';
 import { Link } from 'react-router-dom';
 import {NavLink} from 'react-router-dom';
 import CartWidget from '../CartWidget/CartWidget';
-import {Animated} from "react-animated-css";
+
 
 const NavBar = () => {
     return (
     <div >
-        <Animated animationIn="fadeIn" isVisible={true}>
+        
             <div className='navBar'>     
                 <ul>
                     <li>
@@ -35,8 +35,8 @@ const NavBar = () => {
                     </Link>
                 </ul>
             </div> 
-        </Animated>
-        <Animated animationIn="fadeIn" isVisible={true}>
+        
+        
             <div className='navBar2'>
                 <div className='category'>NUESTRAS CAMISETAS</div>
                 <ul>
@@ -73,7 +73,7 @@ const NavBar = () => {
                 
                 </ul>
             </div>
-        </Animated>     
+            
     </div>
     )
 }
