@@ -124,7 +124,7 @@ const Cart = () => {
                                   <Alert className='text-center' variant='success'>
                                             El monto total de su compra es de ${total}
                                   </Alert>
-                                  <Form.Group className="mb-3 " hasValidation controlId="exampleForm. ControlInput1">
+                                  <Form.Group className="mb-3 "  controlId="exampleForm. ControlInput1">
                                       <Form.Label >Ingrese su Nombre y Apellido</Form.Label>
                                       <Form.Control
                                           type="text" required isInvalid
