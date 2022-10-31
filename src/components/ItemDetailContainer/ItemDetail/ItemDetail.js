@@ -31,6 +31,7 @@ const ItemDetail = ({item}) => {
       :
       <>
           <div className='card-detail' >
+            <h2 className='titulo-responsive'>{item.name} </h2>
           <div className='card-carousel'>
               <Carousel>
                 <Carousel.Item>

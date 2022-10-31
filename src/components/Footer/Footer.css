@@ -68,3 +68,30 @@ img {
 .subFooter p a{
     text-decoration: none;
 }
+
+@media (min-width: 320px) and (max-width: 572px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .redes{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+        
+    }
+    .redes li{
+        margin: 5px;
+    }
+    .mapaSitio{
+        display: flex;
+        flex-direction: row;
+    }
+    .mapaSitio li{
+        margin: 3px;
+    }
+    .footer h5{
+        display: none;
+    }
+}

@@ -60,3 +60,35 @@
     margin-top: 60px;
     margin-bottom: 60px;
 }
+.titulo-responsive{
+    display: none;
+}
+
+@media (min-width: 320px) and (max-width: 576px){
+    .card-detail{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        width: auto;
+    }
+    .detail{
+        border: none;
+        height: auto;
+    }
+    .detail h5{
+        text-align: center;
+    }
+    .detail h4{
+        text-align: center;
+    }
+    .detail h2{
+        font-size: 50px;
+        display: none;
+    }
+    .titulo-responsive{
+        display: flex;
+        font-size: 40px;
+        padding: 15px;
+    }
+}

@@ -17,3 +17,8 @@
     font-size: 45px;
     color: black;
 }
+@media (min-width: 320px) and (max-width: 576px){
+        .nosotros img{
+            display: none;
+        }
+}

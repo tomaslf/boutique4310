@@ -39,6 +39,7 @@ const NavBar = () => {
         
             <div className='navBar2'>
                 <div className='category'>NUESTRAS CAMISETAS</div>
+
                 <ul>
                     <li>
                         <NavLink to={'/category/Argentina'}>
