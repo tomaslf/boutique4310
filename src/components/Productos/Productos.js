@@ -48,7 +48,7 @@ const getProducts =() =>{
   return (
     <div>
        <h1 className="titulo" >Nuestros Productos</h1>
-       {loader ? <img className='ball-img' alt='Old Football' src='../images/ball.png'/> : <ItemList list= {ProductList}/> }
+       {loader ? <div className='ball-img'><img  alt='Old Football' src='../images/ball.png'/></div> : <ItemList list= {ProductList}/> }
     </div>
   )
 }

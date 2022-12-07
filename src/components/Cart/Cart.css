@@ -76,6 +76,10 @@ h3{
         z-index: 100;
         
     }
+    .cart-view{
+        display: flex;
+        margin: 5px;
+    }
     .cart img{
         width: 30px;
         height: 30px;
@@ -93,6 +97,8 @@ h3{
     }
     .cart-view h4{
         font-size: 15px;
+        margin-right: 5px;
     }
+    
    
     }

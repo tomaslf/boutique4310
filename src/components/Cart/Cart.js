@@ -29,7 +29,15 @@ const Cart = () => {
     const phoneEvent = (e) => {
       setInputPhone(e.target.value);
     };
+
+     
+
+    
     const createOrder = () =>{
+
+      if(emailEvent.value === ""){
+        alert("Completa todos los datos");
+      }else{
         const db = getFirestore();
         clear();
         const orden = {
@@ -60,21 +68,27 @@ const Cart = () => {
               window.location = "/"
        })})
     .catch(() => alert("Hubo un error al procesar tu compra"))
-    };
+    }
+      } 
+      
+        
+        
     const [loader, setLoader] = useState(true); 
       useEffect (() => {
         setTimeout(() => {
           setLoader(false);
-        }, 8000)
+        }, 5000)
       });
-    
- 
+      const [buyerButton, setbuyerButton] = useState(true); 
+      useEffect (() => {
+        {(inputEmail && inputName && inputPhone)  === "" ? setbuyerButton(true) : setbuyerButton(false)}
+      });
   return (
     <div>
             
                {cart.length === 0 ? (
             <>
-                 {loader ?  <img className='ball-img' alt='Old Football' src='../images/ball.png'/> :
+                 {loader ?  <div className='ball-img'><img  alt='Old Football' src='../images/ball.png'/></div> :
                   <>
                   <Alert className='text-center mt-5' variant='danger'>
                       NO TENES PRODUCTOS AGREGADOS   
@@ -124,50 +138,51 @@ const Cart = () => {
                                   <Alert className='text-center' variant='success'>
                                             El monto total de su compra es de ${total}
                                   </Alert>
+                                  <Alert className='text-center' variant='danger'>
+                                           Por favor completá todos los datos
+                                  </Alert>
                                   <Form.Group className="mb-3 "  controlId="exampleForm. ControlInput1">
                                       <Form.Label >Ingrese su Nombre y Apellido</Form.Label>
                                       <Form.Control
-                                          type="text" required isInvalid
+                                          type="text" required
                                           placeholder="Nombre y Apellido"
                                           autoFocus
                                           onChange={nameEvent}/>
-                                        <Form.Control.Feedback type="invalid">
-                                                Por favor ingrese su nombre y apellido.
-                                        </Form.Control.Feedback>
+                                       
                                   </Form.Group>
                                   <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                                         <Form.Label>Correo Electrónico</Form.Label>
                                         <Form.Control
-                                          type="email" required isInvalid
+                                          type="email" required 
                                           placeholder="name@example.com"
                                           autoFocus
                                           onChange={emailEvent}
                                         />
-                                        <Form.Control.Feedback type="invalid">
-                                                Por favor ingrese una dirección de correo.
-                                        </Form.Control.Feedback>
+                                        
                                   </Form.Group>
                                   <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                                         <Form.Label>Teléfono</Form.Label>
                                         <Form.Control
-                                          type="number" required isInvalid
+                                          type="number" required
                                           placeholder='Teléfono'
                                           autoFocus
                                           onChange={phoneEvent}
                                         />
-                                        <Form.Control.Feedback type="invalid">
-                                               Por favor ingrese un número de teléfono.
-                                        </Form.Control.Feedback>
+                                        
                                   </Form.Group>
                                 </Form>
                             </Modal.Body>
                             <ModalFooter>
+                              
                                 <Button variant="secondary" onClick={handleClose}>
                                                   Cerrar
                                 </Button>
-                                <Button variant="success" onClick={createOrder}>
+                              
+                                { buyerButton ? <Button variant="success" disabled onClick={createOrder}>
                                         Comprar
-                                </Button>    
+                                </Button>  : <Button variant="success"  onClick={createOrder}>
+                                        Comprar
+                                </Button> }       
                             </ModalFooter>   
                       </Modal>
                  

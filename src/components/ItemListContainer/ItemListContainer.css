@@ -17,9 +17,11 @@ p{
   font-size: 50px;
 }
 .ball-img {
+  display: flex;
+  justify-content: center;
   height: 40vmin;
   pointer-events: none;
-  margin-left: 515px;
+  
   margin-top: 35px;
   animation: 1.5s infinite rodar;
   margin-bottom: 40px;

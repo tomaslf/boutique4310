@@ -91,7 +91,7 @@ const ItemListContainer = ({greeting} ) => {
               </Carousel>
             
         <h1 className="titulo" >{greeting}</h1>
-       {loader ? <img className='ball-img' alt='Old Football' src='../images/ball.png'/> : <ItemList list= {ProductList}/> }     
+       {loader ? <div className='ball-img'><img  alt='Old Football' src='../images/ball.png'/></div>  : <ItemList list= {ProductList}/> }     
     </div>
       
     )
