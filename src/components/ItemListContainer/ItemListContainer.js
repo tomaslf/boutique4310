@@ -60,17 +60,27 @@ const ItemListContainer = ({greeting} ) => {
       <div>
             
               <Carousel className='portada' activeIndex={index} onSelect={handleSelect}>
+              <Carousel.Item>
+                  <img
+                  height={700}
+                    className="d-block w-100"
+                    src="../images/messicup.png"
+                    alt="Third slide"
+                  />
+
+                
+                </Carousel.Item>
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
                     src="../images/diegomaradona.jpg"
-                    alt="First slide" height={600}
+                    alt="First slide" height={700}
                   />
               
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
-                  height={600}
+                  height={700}
                     className="d-block w-100"
                     src="../images/argentinamundial.jpg"
                     alt="Second slide"
@@ -80,7 +90,7 @@ const ItemListContainer = ({greeting} ) => {
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
-                  height={600}
+                  height={700}
                     className="d-block w-100"
                     src="../images/brasilcampeon.jpg"
                     alt="Third slide"
