@@ -63,6 +63,7 @@ const ItemListContainer = ({greeting} ) => {
               <Carousel.Item>
                   <img
                   height={700}
+                    id="img-carousel"
                     className="d-block w-100"
                     src="../images/messicup.png"
                     alt="Third slide"
@@ -72,6 +73,7 @@ const ItemListContainer = ({greeting} ) => {
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
+                  id="img-carousel"
                     className="d-block w-100"
                     src="../images/diegomaradona.jpg"
                     alt="First slide" height={700}
@@ -81,6 +83,7 @@ const ItemListContainer = ({greeting} ) => {
                 <Carousel.Item>
                   <img
                   height={700}
+                  id="img-carousel"
                     className="d-block w-100"
                     src="../images/argentinamundial.jpg"
                     alt="Second slide"
@@ -91,6 +94,7 @@ const ItemListContainer = ({greeting} ) => {
                 <Carousel.Item>
                   <img
                   height={700}
+                  id="img-carousel"
                     className="d-block w-100"
                     src="../images/brasilcampeon.jpg"
                     alt="Third slide"
